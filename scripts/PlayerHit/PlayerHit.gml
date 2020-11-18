@@ -2,7 +2,7 @@
 ///@arg damage 
 function PlayerHit()
 {
-	
+		
 		var damage = argument[0]
 		//if obj_player
 		alarm_set(1,20)
@@ -13,6 +13,7 @@ function PlayerHit()
 		hascontrol = false;
 		iFrames = 70
 		flash = 3;
+		//if hazard x coordinate is greater than player x coordinate
 		if other.x > x
 		{
 			hsp = -3;
