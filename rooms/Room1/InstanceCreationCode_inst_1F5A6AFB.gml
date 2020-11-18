@@ -1,0 +1,1 @@
+text = "Use Airdash (Left Shift) while \n in the air to jump farther distances!";
