@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"feb6a90f-54df-4858-bcd2-08320a13de16","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Player Assets",
+    "path": "folders/Sprites/Player Assets.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_playerJump",

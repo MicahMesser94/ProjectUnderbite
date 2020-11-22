@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"34c6a3f1-e469-477d-944e-b0d4f484f089","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Player Assets",
+    "path": "folders/Sprites/Player Assets.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_hat",

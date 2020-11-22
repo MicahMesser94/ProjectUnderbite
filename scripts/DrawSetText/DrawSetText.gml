@@ -4,7 +4,7 @@
 /// @arg font
 /// @arg halign
 /// @arg valign
-function Script10(){
+function DrawSetText(){
 	draw_set_colour(argument0);
 	draw_set_font(argument1);
 	draw_set_halign(argument2);

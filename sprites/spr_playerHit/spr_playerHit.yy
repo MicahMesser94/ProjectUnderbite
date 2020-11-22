@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"b8832eca-b44e-4579-908c-b28f46bf6a72","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Player Assets",
+    "path": "folders/Sprites/Player Assets.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_playerHit",

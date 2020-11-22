@@ -28,8 +28,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "BackEnd",
+    "path": "folders/Objects/BackEnd.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_control",
