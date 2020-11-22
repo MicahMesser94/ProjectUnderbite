@@ -52,7 +52,7 @@ if(place_meeting(x,y,obj_player))
 						
 							 if (isHit = false && iFrames = 0)
 							 {
-								PlayerHit(other.damage);
+								scr_PlayerHit(other.damage);
 								
 							 }
 					 }

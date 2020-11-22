@@ -16,40 +16,46 @@ if (image_angle > 90) && (image_angle < 270)
 	if (mouse_check_button(mb_left)) && (firingDelay <0)
 	{
 		
+<<<<<<< Updated upstream
 		if obj_player.ammo > 0
 		{
 			ScreenShake(1,60)
+=======
+		//if obj_player.ammo > 0
+		//{
+			scr_ScreenShake(1,60);
+>>>>>>> Stashed changes
 			audio_play_sound(snd_shotgun,5,false);		
-			image_speed = 1
+			image_speed = 1;
 			recoil = 4;
-			firingDelay = 20
+			firingDelay = 20;
 			with (instance_create_layer(x,y,"bullet",obj_bullet))
 			{
-				speed = 5
-				direction = other.image_angle - 15
+				speed = 5;
+				direction = other.image_angle - 15;
 				image_angle = direction;
-				image_index = 1
+				image_index = 1;
 			}
 			with (instance_create_layer(x ,y,"bullet",obj_bullet))
 			{
 				speed = 5
-				direction = other.image_angle -5
+				direction = other.image_angle - 5;
 				image_angle = direction;
-				image_index = 0
+				image_index = 0;
 			}
 			with (instance_create_layer(x ,y,"bullet",obj_bullet))
 			{
-				speed = 5
+				speed = 5;
 				direction = other.image_angle + 5
 				image_angle = direction;
-				image_index = 2
+				image_index = 2;
 			}
 			with (instance_create_layer(x ,y,"bullet",obj_bullet))
 			{
-				speed = 5
+				speed = 5;
 				direction = other.image_angle + 10
 				image_angle = direction;
-				image_index = 3
+				image_index = 3;
 			}
 			//x = x + lengthdir_x(30, image_angle)
 			obj_player.ammo-- 
@@ -63,9 +69,15 @@ else
 	if (mouse_check_button(mb_left)) && (firingDelay <0)
 	{
 		
+<<<<<<< Updated upstream
 		if obj_player.ammo > 0
 		{
 			ScreenShake(2,30)
+=======
+		//if obj_player.ammo > 0
+		//{
+			scr_ScreenShake(2,30);
+>>>>>>> Stashed changes
 			audio_play_sound(snd_shotgun,5,false);
 			audio_play_sound(snd_shotgun,5,false);
 			image_speed = 1;
@@ -82,16 +94,16 @@ else
 			with (instance_create_layer(x ,y,"bullet",obj_bullet))
 			{
 				speed = 5
-				direction = other.image_angle + 5
+				direction = other.image_angle + 5;
 				image_angle = direction;
-				image_index = 1
+				image_index = 1;
 			}
 			with (instance_create_layer(x ,y,"bullet",obj_bullet))
 			{
 				speed = 5
 				direction = other.image_angle -5
 				image_angle = direction;
-				image_index = 2
+				image_index = 2;
 			}
 			with (instance_create_layer(x ,y,"bullet",obj_bullet))
 			{

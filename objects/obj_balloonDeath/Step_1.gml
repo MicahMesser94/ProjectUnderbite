@@ -3,7 +3,7 @@
 
 if sprite_index = spr_balloonDeath
 {
-	if animation_end()
+	if scr_AnimationEnd()
 	{
 		image_speed = 0;
 		instance_destroy()
@@ -12,7 +12,7 @@ if sprite_index = spr_balloonDeath
 /*
 } else if sprite_index = spr_bDeath
 {
-	if animation_end()
+	if scr_AnimationEnd()
 		{
 			instance_destroy()
 		}

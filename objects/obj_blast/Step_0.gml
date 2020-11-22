@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if animation_end() 
+if scr_AnimationEnd() 
 {
 	with (obj_enemy_boss)
 	{

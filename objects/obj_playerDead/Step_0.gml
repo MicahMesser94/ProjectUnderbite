@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (animation_end()) 
+if (scr_AnimationEnd()) 
 {
 	alarm[0] = 100;
 	image_speed = 0

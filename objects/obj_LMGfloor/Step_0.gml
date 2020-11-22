@@ -16,8 +16,18 @@ if (equippable = true)
 			instance_destroy(global.gunState)
 		}
 		obj_player.ammo = 6
+<<<<<<< Updated upstream
 		instance_create_layer(obj_player.x,obj_player.y,"gun",obj_gun)
 		instance_destroy()
 		*/
+=======
+		instance_create_layer(obj_player.x,obj_player.y,"gun",obj_LMG)
+		addgun = scr_ItemPickUp(1);
+		if (addgun != 0)
+		{
+			instance_destroy()
+		}
+		
+>>>>>>> Stashed changes
 	}
 }else sprite_index = spr_LMGfloor

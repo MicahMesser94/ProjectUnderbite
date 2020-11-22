@@ -1,3 +1,3 @@
 /// @description Insert description here
 // You can write your code in this editor
-if animation_end() instance_destroy()
+if scr_AnimationEnd() instance_destroy()

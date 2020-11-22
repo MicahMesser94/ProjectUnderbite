@@ -42,7 +42,7 @@ if (layer_exists("Trees"))
 	layer_x("Trees",x/4);
 }
 
-//Screenshake
+//scr_ScreenShake
 x += random_range(-shakeRemain,shakeRemain);
 y += random_range(-shakeRemain,shakeRemain);
 shakeRemain = max(0, shakeRemain - ((1/shakeLength) * shakeMagnitude));

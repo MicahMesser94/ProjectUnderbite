@@ -40,8 +40,8 @@ switch(global.gunState)
 }
 switch(state)
 {
-	case PLAYERSTATE.FREE: PlayerState_Free(); break;
-	case PLAYERSTATE.ATTACK_SLASH: PlayerState_Attack_Slash(); break;
-	//case PLAYERSTATE.ATTACK_COMBO: PlayerState_Attack_Combo(); break;
+	case PLAYERSTATE.FREE: scr_PlayerStateFree(); break;
+	case PLAYERSTATE.ATTACK_SLASH: scr_PlayerStateAttackSlash(); break;
+	//case PLAYERSTATE.ATTACK_COMBO: scr_PlayerStateAttackCombo(); break;
 }
 
