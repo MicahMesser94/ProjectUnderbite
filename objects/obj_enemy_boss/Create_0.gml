@@ -25,4 +25,4 @@ hp_max = hp
 healthbar_width = 1200
 healthbar_height = 24
 healthbar_x = 100
-healthbar_y = 720
+healthbar_y = 680

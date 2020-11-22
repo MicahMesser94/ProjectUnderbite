@@ -104,8 +104,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"12c893bc-3415-4669-9513-c0997e1c237e","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Player Assets",
+    "path": "folders/Sprites/Player Assets.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_shotgunReload",

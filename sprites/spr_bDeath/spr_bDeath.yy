@@ -80,8 +80,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"420f37f3-267f-4ec4-b498-41697935d265","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Enemies",
+    "path": "folders/Sprites/Enemies.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_bDeath",

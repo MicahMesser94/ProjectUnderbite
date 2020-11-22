@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"cdd49bce-758b-4026-8ac0-206f29d29be0","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Level Design",
+    "path": "folders/Sprites/Level Design.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_dirtMenu",

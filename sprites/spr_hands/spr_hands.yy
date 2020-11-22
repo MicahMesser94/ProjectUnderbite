@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"183335a6-19bc-4cda-bba4-8fb42cacd1a0","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Player Assets",
+    "path": "folders/Sprites/Player Assets.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_hands",

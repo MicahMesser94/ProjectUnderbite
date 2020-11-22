@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"483e7dc6-e9c8-49a0-92c1-2aa0013b23e7","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "UI",
+    "path": "folders/Sprites/UI.yy",
   },
   "resourceVersion": "1.0",
   "name": "Sprite48",

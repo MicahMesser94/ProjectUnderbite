@@ -16,9 +16,14 @@ if (image_angle > 90) && (image_angle < 270)
 	if (mouse_check_button(mb_left)) && (firingDelay <0)
 	{
 		
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 		if obj_player.ammo > 0
 		{
+=======
+		//if obj_player.ammo > 0
+		//{
+>>>>>>> 1179d14f8bc17da511d4be6104639ee7d2e9a090
 			ScreenShake(1,60)
 =======
 		//if obj_player.ammo > 0
@@ -59,7 +64,7 @@ if (image_angle > 90) && (image_angle < 270)
 			}
 			//x = x + lengthdir_x(30, image_angle)
 			obj_player.ammo-- 
-		}
+		//}
 		
 	}
 }
@@ -69,9 +74,14 @@ else
 	if (mouse_check_button(mb_left)) && (firingDelay <0)
 	{
 		
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 		if obj_player.ammo > 0
 		{
+=======
+		//if obj_player.ammo > 0
+		//{
+>>>>>>> 1179d14f8bc17da511d4be6104639ee7d2e9a090
 			ScreenShake(2,30)
 =======
 		//if obj_player.ammo > 0
@@ -113,6 +123,6 @@ else
 				image_index = 3
 			}
 			obj_player.ammo-- 
-		}
+		//}
 	}
 }

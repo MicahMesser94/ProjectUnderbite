@@ -5,17 +5,12 @@ if (equippable = true)
 	sprite_index = spr_LMGfloorS
 	if (keyboard_check_pressed(ord("E")))
 	{
-		with (obj_gunParent)
-		{
-			ChangeWeapon(obj_LMGfloor.weapon)
-			ammo[weapon] += 6;
-		}
-		/*
 		if instance_exists(global.gunState)
 		{
 			instance_destroy(global.gunState)
 		}
 		obj_player.ammo = 6
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 		instance_create_layer(obj_player.x,obj_player.y,"gun",obj_gun)
 		instance_destroy()
@@ -23,11 +18,18 @@ if (equippable = true)
 =======
 		instance_create_layer(obj_player.x,obj_player.y,"gun",obj_LMG)
 		addgun = scr_ItemPickUp(1);
+=======
+		instance_create_layer(obj_player.x,obj_player.y,"gun",obj_LMG)
+		addgun = ItemPickUp(1);
+>>>>>>> 1179d14f8bc17da511d4be6104639ee7d2e9a090
 		if (addgun != 0)
 		{
 			instance_destroy()
 		}
 		
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> 1179d14f8bc17da511d4be6104639ee7d2e9a090
 	}
 }else sprite_index = spr_LMGfloor

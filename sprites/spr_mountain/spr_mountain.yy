@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"55cfa5af-20f0-447a-aba9-217675923ef4","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Level Design",
+    "path": "folders/Sprites/Level Design.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_mountain",
