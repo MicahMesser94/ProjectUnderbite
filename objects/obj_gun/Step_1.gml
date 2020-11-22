@@ -16,8 +16,8 @@ if (image_angle > 90) && (image_angle < 270)
 	if (mouse_check_button(mb_left)) && (firingDelay <0)
 	{
 		
-		if obj_player.ammo > 0
-		{
+		//if obj_player.ammo > 0
+		//{
 			ScreenShake(1,60)
 			audio_play_sound(snd_shotgun,5,false);		
 			image_speed = 1
@@ -53,7 +53,7 @@ if (image_angle > 90) && (image_angle < 270)
 			}
 			//x = x + lengthdir_x(30, image_angle)
 			obj_player.ammo-- 
-		}
+		//}
 		
 	}
 }
@@ -63,8 +63,8 @@ else
 	if (mouse_check_button(mb_left)) && (firingDelay <0)
 	{
 		
-		if obj_player.ammo > 0
-		{
+		//if obj_player.ammo > 0
+		//{
 			ScreenShake(2,30)
 			audio_play_sound(snd_shotgun,5,false);
 			audio_play_sound(snd_shotgun,5,false);
@@ -101,6 +101,6 @@ else
 				image_index = 3
 			}
 			obj_player.ammo-- 
-		}
+		//}
 	}
 }

@@ -35,10 +35,10 @@ enum PLAYERSTATE
 enum GUNEQUIP
 {
 	NONE = 0,
-	SHOTGUN = 1,
-	LMG = 2
+	SHOTGUN = obj_gun,
+	LMG =  obj_LMG
 }
-/*
+
 if global.gunState != GUNEQUIP.NONE
 {
 	instance_create_layer(x,y,"gun",global.gunState)

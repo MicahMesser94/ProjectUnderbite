@@ -5,9 +5,11 @@ if (hascontrol)
 	key_right = keyboard_check(ord("D"));
 	key_jump = keyboard_check_pressed(vk_space);
 	key_jumpHi = keyboard_check(vk_space);
-	keyAttack = keyboard_check_pressed(ord("Q"))
-	keyReload = keyboard_check_pressed(ord("R"))
-	key_roll = keyboard_check_pressed(vk_lshift)
+	keyAttack = keyboard_check_pressed(ord("Q"));
+	keyReload = keyboard_check_pressed(ord("R"));
+	key_roll = keyboard_check_pressed(vk_lshift);
+	key_one = keyboard_check_pressed(ord("1"));
+	key_two = keyboard_check_pressed(ord("2"));
 }
 else
 {
@@ -18,6 +20,8 @@ else
 	keyAttack = 0;
 	keyReload = 0;
 	key_roll = 0;
+	key_one=0;
+	key_two =0;
 	
 }
 show_debug_message(global.gunState)
