@@ -10,6 +10,7 @@ if (hascontrol)
 	key_roll = keyboard_check_pressed(vk_lshift);
 	key_one = keyboard_check_pressed(ord("1"));
 	key_two = keyboard_check_pressed(ord("2"));
+	key_altFire = mouse_check_button(mb_right);
 }
 else
 {
@@ -24,7 +25,7 @@ else
 	key_two =0;
 	
 }
-show_debug_message(global.gunState)
+
 iFrames = max(0, iFrames - 1)
 
 switch(global.gunState)

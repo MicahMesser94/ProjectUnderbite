@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"794e8c99-fd3f-4bfb-ab7e-d13fa55980f8","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Level Design",
+    "path": "folders/Sprites/Level Design.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_city",

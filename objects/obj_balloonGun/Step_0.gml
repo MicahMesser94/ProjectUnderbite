@@ -2,7 +2,7 @@
 
 
 x = x - lengthdir_x(mygun.recoil, mygun.image_angle);
-y = y - lengthdir_x(mygun.recoil, mygun.image_angle);
+y = y - lengthdir_y(mygun.recoil, mygun.image_angle);
 if instance_exists(obj_player)
 {
 	switch (state)

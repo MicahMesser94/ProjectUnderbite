@@ -19,7 +19,7 @@ if(instance_exists(obj_player))
 			audio_sound_pitch(snd_shotgun,0.6)
 			audio_play_sound(snd_shotgun,5,false);
 			image_speed = 1
-			recoil = 4;
+			recoil = 8;
 			with (instance_create_layer(x,y,"bullet",obj_bulletEnemy))
 			{
 				speed = 3

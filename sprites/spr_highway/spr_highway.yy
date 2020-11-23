@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c83018a5-29cf-4036-8296-6e1f8729558f","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Level Design",
+    "path": "folders/Sprites/Level Design.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_highway",
