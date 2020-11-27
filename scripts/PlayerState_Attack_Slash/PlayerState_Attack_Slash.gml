@@ -32,7 +32,7 @@ function PlayerState_Attack_Slash()
 	}
 	ds_list_destroy(hitByAttackNow);
 	mask_index = spr_player;
-	if (animation_end())
+	if (scr_AnimationEnd())
 	{
 		sprite_index = spr_player
 		state = PLAYERSTATE.FREE;

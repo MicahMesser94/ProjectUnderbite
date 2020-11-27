@@ -47,7 +47,7 @@ if instance_exists(obj_player)
 		case BALLOONSTATE.ATTACK_SLASH:
 		{
 			sprite_index = spr_balloonAttack
-			if (animation_end())
+			if (scr_AnimationEnd())
 			{
 				 if(place_meeting(x,y,obj_player))
 				 {

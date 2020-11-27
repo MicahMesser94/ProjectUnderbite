@@ -50,7 +50,7 @@ if instance_exists(obj_player)
 		break;/*
 		case BALLOONSTATEGUN.SHOOT:
 		{
-			if (animation_end())
+			if (scr_AnimationEnd())
 			{
 				 if(place_meeting(x,y,obj_player))
 				 {

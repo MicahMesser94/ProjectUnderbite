@@ -9,4 +9,4 @@ if (distance_to_object(obj_enemy_boss) < 5 && obj_enemy_boss.stunned > 0 || dist
 }
 
 
-if animation_end() instance_destroy()
+if scr_AnimationEnd() instance_destroy()

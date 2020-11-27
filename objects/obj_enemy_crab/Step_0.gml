@@ -5,7 +5,7 @@
 event_inherited();
 if sprite_index = spr_eSpawn
 {
-	if animation_end()
+	if scr_AnimationEnd()
 	{
 		sprite_index = spr_enemyW
 	}

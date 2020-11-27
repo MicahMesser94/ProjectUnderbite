@@ -45,7 +45,7 @@ function PlayerState_Free(){
 	if (sprite_index = spr_playerRoll)
 	{
 		iFrames = true;
-		if animation_end()
+		if scr_AnimationEnd()
 		{
 			hascontrol = true;
 			iFrames = false;
@@ -54,7 +54,7 @@ function PlayerState_Free(){
 	if (sprite_index = spr_airDash)
 	{
 		iFrames = true;
-		if animation_end()
+		if scr_AnimationEnd()
 		{
 		
 			hascontrol = true;

@@ -5,7 +5,7 @@
 event_inherited();
 if sprite_index = spr_bossJump
 {
-	if animation_end()
+	if scr_AnimationEnd()
 	{
 		image_speed = 0
 	}
@@ -82,7 +82,7 @@ switch (state)
 	case e_stateBoss.ATTACK:
 	{
 			
-			if (sprite_index = spr_bossMelee && animation_end())
+			if (sprite_index = spr_bossMelee && scr_AnimationEnd())
 			{	
 				sprite_index = spr_boss;
 				isAttacking = false;
