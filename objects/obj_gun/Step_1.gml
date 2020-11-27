@@ -15,7 +15,7 @@ if (mouse_check_button(mb_left)) && (firingDelay <0)
 		
 	//if obj_player.ammo > 0
 	//{
-		ScreenShake(1,60)
+		scr_ScreenShake(1,60)
 		audio_play_sound(snd_shotgun,5,false);		
 		image_speed = 1
 		recoil = 4;

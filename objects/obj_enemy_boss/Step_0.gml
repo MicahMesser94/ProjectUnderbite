@@ -102,7 +102,7 @@ switch (state)
 		{
 			
 			stunned = 100;
-			ScreenShake(7,80)
+			scr_ScreenShake(7,80)
 			state = e_stateBoss.STUNNED
 			
 			
