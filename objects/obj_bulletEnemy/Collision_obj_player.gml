@@ -6,7 +6,7 @@ if (other.isHit = false && other.iFrames = 0)
 	with (other)
 	{
 		
-		PlayerHit(other.damage)
+		scr_PlayerHit(other.damage)
 	
 	}
 }

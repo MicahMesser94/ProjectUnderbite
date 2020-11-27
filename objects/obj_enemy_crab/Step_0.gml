@@ -34,7 +34,7 @@ switch (state)
 						
 							 if (isHit = false && iFrames = false)
 							 {
-								PlayerHit(other.damage);
+								scr_PlayerHit(other.damage);
 								
 							 }
 					 }
@@ -74,7 +74,7 @@ switch (state)
 						
 							 if (isHit = false && iFrames = 0)
 							 {
-								PlayerHit(other.damage);
+								scr_PlayerHit(other.damage);
 								
 							 }
 					 }

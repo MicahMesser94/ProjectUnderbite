@@ -6,7 +6,7 @@
     "path": "folders/Scripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "src_DrawSetText",
+  "name": "scr_ItemSwitch",
   "tags": [],
   "resourceType": "GMScript",
 }

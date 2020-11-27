@@ -1,6 +1,6 @@
 ///arg inventory slot
 ///arg gunequip
-function ItemSwitch()
+function scr_ItemSwitch()
 {
 		for (i = 0; i < global.maxItems; i += 1)
 		{

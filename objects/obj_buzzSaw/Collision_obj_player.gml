@@ -7,7 +7,7 @@ if (other.isHit = false && other.iFrames = 0)
 	with (other)
 	{
 		
-		PlayerHit(other.damage)
+		scr_PlayerHit(other.damage)
 			/*
 			alarm_set(1,38)
 			audio_sound_pitch(snd_hit, choose(1.0,1.1,1.2))
