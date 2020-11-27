@@ -11,7 +11,7 @@ if (equippable = true)
 		}
 		obj_player.ammo = 6
 		instance_create_layer(obj_player.x,obj_player.y,"gun",obj_LMG)
-		addgun = ItemPickUp(1);
+		addgun = scr_ItemPickUp(1);
 		if (addgun != 0)
 		{
 			instance_destroy()
