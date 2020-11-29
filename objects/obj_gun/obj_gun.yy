@@ -29,7 +29,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Shotgun",
-    "path": "folders/Objects/Shotgun.yy",
+    "path": "folders/Objects/PlayerWeapons/Shotgun.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_gun",
