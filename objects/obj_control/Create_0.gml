@@ -3,6 +3,9 @@ Intentory Items
 0 = shotgun
 1 = LMG
 */
+
+global.debug = true;
+
 //Size variables and mode setup
 w = display_get_gui_width();
 h = display_get_gui_height();

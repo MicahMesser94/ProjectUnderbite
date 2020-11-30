@@ -9,3 +9,8 @@ if (flash > 0)
 	draw_self();
 	shader_reset();
 }
+
+//if (global.debug) {
+//	draw_set_colour(c_white);
+//	draw_text(160,160,"Walk Speed: " + string(walksp))
+//}
