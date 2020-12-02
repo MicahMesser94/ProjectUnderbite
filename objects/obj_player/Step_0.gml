@@ -33,13 +33,14 @@ switch(global.gunState)
 	case GUNEQUIP.SHOTGUN:
 	{
 		walksp = 4;
-		max_ammo = 6;
+		clipSize = 6
 		
 	}break;
 	case GUNEQUIP.LMG: 
 	{
 		walksp = 3;
-		max_ammo = 100;
+		clipSize = 50
+		
 		
 	}break;
 }

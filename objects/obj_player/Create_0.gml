@@ -17,14 +17,13 @@ iFrames = 0;
 dashCount = 0;
 canJump = 0;
 grounded = false;
-ammo = 0;
-max_ammo = ammo;
-
 healthbar_width = 162;
 healthbar_height = 12;
 healthbar_x = 100;
 healthbar_y = 50;
-
+ammo = 6
+clipSize = ammo
+maxAmmo = 40
 enum PLAYERSTATE
 {
 	FREE,
