@@ -21,9 +21,13 @@ healthbar_width = 162;
 healthbar_height = 12;
 healthbar_x = 100;
 healthbar_y = 50;
-ammo = 6
-clipSize = ammo
-maxAmmo = 40
+
+//Array of clip size
+clipSize[GUNEQUIP.SHOTGUN] = 6
+clipSize[GUNEQUIP.LMG] = 50
+
+equipped = obj_hands
+scr_CheckGun()
 enum PLAYERSTATE
 {
 	FREE,
@@ -34,11 +38,11 @@ enum PLAYERSTATE
 enum GUNEQUIP
 {
 	NONE = 0,
-	SHOTGUN = obj_gun,
-	LMG =  obj_LMG
+	SHOTGUN = 1,
+	LMG =  2
 }
 
 if global.gunState != GUNEQUIP.NONE
 {
-	instance_create_layer(x,y,"gun",global.gunState)
+	instance_create_layer(x,y,"gun",equipped)
 }

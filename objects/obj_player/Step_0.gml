@@ -25,25 +25,12 @@ else
 	key_two =0;
 	
 }
+show_debug_message(equipped)
 
+//show_debug_message(global.gunState)
 iFrames = max(0, iFrames - 1)
 
-switch(global.gunState)
-{
-	case GUNEQUIP.SHOTGUN:
-	{
-		walksp = 4;
-		clipSize = 6
-		
-	}break;
-	case GUNEQUIP.LMG: 
-	{
-		walksp = 3;
-		clipSize = 50
-		
-		
-	}break;
-}
+scr_CheckGun()
 switch(state)
 {
 	case PLAYERSTATE.FREE: scr_PlayerStateFree(); break;

@@ -4,15 +4,11 @@ if (equippable = true)
 {
 	sprite_index = spr_gunFloorS
 	if (keyboard_check_pressed(ord("E")))
-	{
-		
-		
-		if instance_exists(global.gunState)
-		{
-			instance_destroy(global.gunState)
-		}
-		obj_player.ammo = 6
+	{	
+		instance_destroy(obj_player.equipped)
+		global.gunState = GUNEQUIP.SHOTGUN
 		instance_create_layer(obj_player.x,obj_player.y,"gun",obj_gun)
+		global.ammo[global.gunState] = obj_player.clipSize[global.gunState]
 		addgun = scr_ItemPickUp(0);
 		if (addgun != 0)
 		{

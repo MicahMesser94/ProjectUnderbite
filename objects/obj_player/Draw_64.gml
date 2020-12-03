@@ -6,9 +6,11 @@ draw_sprite_stretched(spr_healthBar,0,healthbar_x,healthbar_y,(hp/hp_max) * heal
 draw_sprite(spr_hBarBorder,0,healthbar_x, healthbar_y);
 
 
-if global.gunState != GUNEQUIP.NONE
+//if global.gunState != GUNEQUIP.NONE
 {
-	draw_text(125,125,string(ammo))
-	draw_text(150,125,string(maxAmmo))
+	scr_DrawSetText(c_white,Font2, fa_center, fa_top)
+	draw_text(125,125,string(global.ammo[global.gunState]))
+	draw_text(150,125,string(global.currentAmmo[global.gunState]))
+	//draw_text (175,125,string(clipSize))
 }
 

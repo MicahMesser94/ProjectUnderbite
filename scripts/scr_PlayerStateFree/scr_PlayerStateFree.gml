@@ -12,11 +12,11 @@ function scr_PlayerStateFree(){
 	canJump -=1
 	if (keyReload)
 	{
-		if (global.gunState!= GUNEQUIP.NONE && maxAmmo > 1)
+		if (global.gunState!= GUNEQUIP.NONE && global.currentAmmo[global.gunState] > 0)
 		{
-			maxAmmo += ammo
-			ammo = min(clipSize, maxAmmo)
-			maxAmmo -= min(clipSize, maxAmmo)
+			global.currentAmmo[global.gunState] += global.ammo[global.gunState]
+			global.ammo[global.gunState] = min(clipSize[global.gunState], global.currentAmmo[global.gunState])
+			global.currentAmmo[global.gunState] -= min(clipSize[global.gunState], global.currentAmmo[global.gunState])
 			
 		}
 	}
