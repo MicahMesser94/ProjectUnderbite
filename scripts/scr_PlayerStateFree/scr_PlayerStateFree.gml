@@ -14,11 +14,16 @@ function scr_PlayerStateFree(){
 	{
 		if (global.gunState!= GUNEQUIP.NONE && global.currentAmmo[global.gunState] > 0)
 		{
-			global.currentAmmo[global.gunState] += global.ammo[global.gunState]
-			global.ammo[global.gunState] = min(clipSize[global.gunState], global.currentAmmo[global.gunState])
-			global.currentAmmo[global.gunState] -= min(clipSize[global.gunState], global.currentAmmo[global.gunState])
-			
+			isReloading = true;
 		}
+	}
+	if reloadTime == reloadDur
+	{
+		global.currentAmmo[global.gunState] += global.ammo[global.gunState]
+		global.ammo[global.gunState] = min(clipSize[global.gunState], global.currentAmmo[global.gunState])
+		global.currentAmmo[global.gunState] -= min(clipSize[global.gunState], global.currentAmmo[global.gunState])
+		isReloading = false;
+		reloadTime = 0;
 	}
 	if (key_jump && canJump > 0)
 		{

@@ -19,7 +19,7 @@ y = y - lengthdir_x(recoil, image_angle);
 
 if ((mouse_check_button(mb_left)) && (firingDelay <0))
 	{
-		if (global.ammo[global.gunState] > 0)
+		if (global.ammo[global.gunState] > 0 && obj_player.isReloading = false)
 			{
 			firecount++
 			if firecount > 5

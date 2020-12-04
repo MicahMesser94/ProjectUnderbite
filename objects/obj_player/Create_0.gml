@@ -21,7 +21,9 @@ healthbar_width = 162;
 healthbar_height = 12;
 healthbar_x = 100;
 healthbar_y = 50;
-
+isReloading = false;
+reloadDur = 120;
+reloadTime = 0;
 //Array of clip size
 clipSize[GUNEQUIP.SHOTGUN] = 6
 clipSize[GUNEQUIP.LMG] = 50
