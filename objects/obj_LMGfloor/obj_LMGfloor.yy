@@ -29,7 +29,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "LMG",
-    "path": "folders/Objects/LMG.yy",
+    "path": "folders/Objects/PlayerWeapons/LMG.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_LMGfloor",

@@ -5,6 +5,11 @@ draw_rectangle(0,0,w,75,false);
 draw_rectangle(0,h,w,700,false);
 */
 
+if (global.debug) {
+	draw_set_colour(c_white);
+	draw_text(150,150,"FPS: " + string(fps));
+}
+
 
 
 if (mode != TRANS_MODE.OFF)

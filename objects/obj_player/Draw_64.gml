@@ -23,3 +23,15 @@ if (isReloading)
 	//draw_text (175,125,string(clipSize))
 }
 
+var playerAmmo = global.ammo[global.gunState];
+draw_text(125,125,playerAmmo);
+
+if (global.debug) {
+	
+	draw_set_colour(c_white);
+	draw_text(160,175,"Walkspeed: " + string(walksp));
+	if (global.gunState) {
+		draw_text(160,195,"GunEquip: " + string(GUNEQUIP.LMG));
+	}
+	draw_text(160,195,"GunState: " + string(global.gunState));
+}

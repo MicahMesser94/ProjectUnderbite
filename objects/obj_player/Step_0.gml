@@ -30,11 +30,21 @@ show_debug_message(equipped)
 
 iFrames = max(0, iFrames - 1)
 
-scr_CheckGun()
+
+scr_CheckGun() // this returns the equipped object
+
 switch(state)
 {
-	case PLAYERSTATE.FREE: scr_PlayerStateFree(); break;
-	case PLAYERSTATE.ATTACK_SLASH: scr_PlayerStateAttackSlash(); break;
+	case PLAYERSTATE.FREE: 
+	{
+		scr_PlayerStateFree(); 
+		break;
+	}
+	case PLAYERSTATE.ATTACK_SLASH:
+	{
+		scr_PlayerStateAttackSlash(); 
+		break;
+	}
 	//case PLAYERSTATE.ATTACK_COMBO: scr_PlayerStateAttackCombo(); break;
 }
 

@@ -4,6 +4,9 @@ Intentory Items
 1 = LMG
 2 = laser pistol
 */
+
+global.debug = true;
+
 //Size variables and mode setup
 w = display_get_gui_width();
 h = display_get_gui_height();

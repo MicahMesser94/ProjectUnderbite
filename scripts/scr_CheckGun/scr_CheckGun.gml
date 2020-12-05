@@ -6,28 +6,27 @@ function scr_CheckGun(){
 	{
 		case GUNEQUIP.NONE:
 		{
-			walksp = 6
-			equipped = obj_hands
-			
+			walksp = constWalkSp;
+			equipped = obj_hands;
+			break;
 		}
 		case GUNEQUIP.SHOTGUN:
 		{
-			walksp = 4;
-			equipped = obj_gun
-			
-		
-		}break;
+			walksp = round(constWalkSp * .4);
+			equipped = obj_gun;
+			break;
+		}
 		case GUNEQUIP.LMG: 
 		{
-			walksp = 3;
-			equipped = obj_LMG
-		
-		
-		}break;
+			walksp = round(constWalkSp * .6);
+			equipped = obj_LMG;
+			break;
+		}
 		case GUNEQUIP.LASER:
 		{
-			walksp = 5;
-			equipped = obj_laserPistol
+			walksp = round(constWalkSp * .5);;
+			equipped = obj_laserPistol;
+			break;
 		}
 		return(equipped)
 	}

@@ -1,7 +1,7 @@
 hsp = 0;
 vsp = 0;
-grv = 0.3;
-walksp = 4;
+walksp = constWalkSp;
+dashSpeed = 10;
 isJumping = false;
 isHit = false;
 makeHat = false;
@@ -40,13 +40,15 @@ enum PLAYERSTATE
 
 enum GUNEQUIP
 {
-	NONE = 0,
-	SHOTGUN = 1,
-	LMG =  2,
-	LASER = 3
+	NONE,
+	SHOTGUN,
+	LMG,
+	LASER
 }
 
-if global.gunState != GUNEQUIP.NONE
+if (global.gunState != GUNEQUIP.NONE)
 {
 	instance_create_layer(x,y,"gun",equipped)
 }
+
+

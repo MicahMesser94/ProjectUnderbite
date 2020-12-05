@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "PlayerScripts",
-    "path": "folders/Scripts/PlayerScripts.yy",
+    "name": "PlayerActions",
+    "path": "folders/Scripts/PlayerScripts/PlayerActions.yy",
   },
   "resourceVersion": "1.0",
-  "name": "scr_PlayerStateAttackCombo",
+  "name": "scr_PlayerDash",
   "tags": [],
   "resourceType": "GMScript",
 }
