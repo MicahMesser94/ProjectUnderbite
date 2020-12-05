@@ -1,6 +1,7 @@
 
 ///arg bulletcount
 function scr_SpreadShot(){
+
 	
 	with (instance_create_layer(x,y,"bullet",obj_bullet))
 	{

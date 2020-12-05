@@ -11,10 +11,20 @@ function scr_PlayerStateFree(){
 	
 	vsp = vsp + grv;
 	canJump -=1
-	
-	if (keyReload)
+	if (keyReload || global.ammo[global.gunState] = 0)
 	{
-		ammo = max_ammo
+		if (global.gunState!= GUNEQUIP.NONE && global.remainingAmmo[global.gunState] > 0)
+		{
+			isReloading = true;
+		}
+	}
+	if (reloadTime == reloadDur)
+	{
+		global.remainingAmmo[global.gunState] += global.ammo[global.gunState]
+		global.ammo[global.gunState] = min(clipSize[global.gunState], global.remainingAmmo[global.gunState])
+		global.remainingAmmo[global.gunState] -= min(clipSize[global.gunState], global.remainingAmmo[global.gunState])
+		isReloading = false;
+		reloadTime = 0;
 	}
 	
 	if (key_jump && canJump > 0)

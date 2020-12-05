@@ -13,8 +13,8 @@ y = y - lengthdir_y(recoil, image_angle);
 if (mouse_check_button(mb_left)) && (firingDelay <0)
 {
 		
-	//if obj_player.ammo > 0
-	//{
+	if (global.ammo[global.gunState] > 0 && obj_player.isReloading = false)
+	{
 		scr_ScreenShake(1,60)
 		audio_play_sound(snd_shotgun,5,false);		
 		image_speed = 1
@@ -24,8 +24,9 @@ if (mouse_check_button(mb_left)) && (firingDelay <0)
 		{
 			scr_SpreadShot(i)
 		}
-		obj_player.ammo-- 
-		//}
+		global.ammo[global.gunState]--
+		
+	}
 		
 }
 

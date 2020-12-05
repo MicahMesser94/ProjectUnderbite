@@ -7,9 +7,32 @@ function scr_ItemSwitch()
 			if (global.inventory[i] == argument0)// if slot "i" contains argument0
 			{	
 				
-				instance_destroy(global.gunState)
+				instance_destroy(equipped)
 				global.gunState = argument1
-				instance_create_layer(x,y,"gun",global.gunState)
+				switch(global.gunState)
+				{
+					case GUNEQUIP.NONE:
+					{
+						walksp = 6
+						equipped = obj_hands
+					}
+					case GUNEQUIP.SHOTGUN:
+					{
+						walksp = 4;
+						equipped = obj_gun
+		
+					}break;
+					case GUNEQUIP.LMG: 
+					{
+						walksp = 3;
+						equipped = obj_LMG
+		
+		
+					}break;
+				}
+
+				instance_create_layer(x,y,"gun",equipped)
+				//global.ammo[global.gunState] = clipSize[global.gunState]
 				return(1);//end script
 			}
 		}

@@ -25,6 +25,8 @@ else
 	key_two =0;
 	
 }
+show_debug_message(equipped)
+
 
 iFrames = max(0, iFrames - 1)
 //if (global.gunState != GUNEQUIP.NONE) {

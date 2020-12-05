@@ -19,14 +19,19 @@ iFrames = 0;
 dashCount = 0;
 canJump = 0;
 grounded = false;
-ammo = 0;
-max_ammo = ammo;
-
 healthbar_width = 162;
 healthbar_height = 12;
 healthbar_x = 100;
 healthbar_y = 50;
+isReloading = false;
+reloadDur = 120;
+reloadTime = 0;
+//Array of clip size
+clipSize[GUNEQUIP.SHOTGUN] = 6
+clipSize[GUNEQUIP.LMG] = 50
 
+equipped = obj_hands
+scr_CheckGun()
 enum PLAYERSTATE
 {
 	FREE,
@@ -43,7 +48,7 @@ enum GUNEQUIP
 
 if (global.gunState != GUNEQUIP.NONE)
 {
-	instance_create_layer(x,y,"gun",global.gunState)
+	instance_create_layer(x,y,"gun",equipped)
 }
 
 
