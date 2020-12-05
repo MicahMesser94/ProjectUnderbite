@@ -31,5 +31,5 @@ for (i = 0; i < global.maxItems; i +=1)
 
 global.ammo[GUNEQUIP.SHOTGUN] = 6
 global.ammo[GUNEQUIP.LMG] = 50
-global.currentAmmo[GUNEQUIP.SHOTGUN] = 100
-global.currentAmmo[GUNEQUIP.LMG] = 500
+global.remainingAmmo[GUNEQUIP.SHOTGUN] = 100
+global.remainingAmmo[GUNEQUIP.LMG] = 500

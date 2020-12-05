@@ -27,7 +27,7 @@ else
 }
 show_debug_message(equipped)
 
-//show_debug_message(global.gunState)
+
 iFrames = max(0, iFrames - 1)
 
 scr_CheckGun()

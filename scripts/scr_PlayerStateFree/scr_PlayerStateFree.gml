@@ -10,18 +10,18 @@ function scr_PlayerStateFree(){
 	}
 	vsp = vsp + grv;
 	canJump -=1
-	if (keyReload)
+	if (keyReload || global.ammo[global.gunState] = 0)
 	{
-		if (global.gunState!= GUNEQUIP.NONE && global.currentAmmo[global.gunState] > 0)
+		if (global.gunState!= GUNEQUIP.NONE && global.remainingAmmo[global.gunState] > 0)
 		{
 			isReloading = true;
 		}
 	}
-	if reloadTime == reloadDur
+	if (reloadTime == reloadDur)
 	{
-		global.currentAmmo[global.gunState] += global.ammo[global.gunState]
-		global.ammo[global.gunState] = min(clipSize[global.gunState], global.currentAmmo[global.gunState])
-		global.currentAmmo[global.gunState] -= min(clipSize[global.gunState], global.currentAmmo[global.gunState])
+		global.remainingAmmo[global.gunState] += global.ammo[global.gunState]
+		global.ammo[global.gunState] = min(clipSize[global.gunState], global.remainingAmmo[global.gunState])
+		global.remainingAmmo[global.gunState] -= min(clipSize[global.gunState], global.remainingAmmo[global.gunState])
 		isReloading = false;
 		reloadTime = 0;
 	}

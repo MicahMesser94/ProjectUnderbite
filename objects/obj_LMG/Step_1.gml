@@ -61,23 +61,25 @@ if ((mouse_check_button(mb_left)) && (firingDelay <0))
 	}
 if (mouse_check_button_released(mb_left))
 {
-	lastShot = true;
-	with (instance_create_layer(x,y,"bullet",obj_LMGbullet))
-		{
-			speed = 5
-			direction = other.image_angle //+ random_range(-1,1);
-			image_angle = direction;
-			if other.lastShot = true image_index = 3
-			
-		}
-	lastShot = true;
-	firecount = 0;/*
-	if(!audio_is_playing(snd_shit))
+	if (global.ammo[global.gunState] > 0 && obj_player.isReloading = false)
 	{
-		audio_play_sound(snd_t,5,false);
+		lastShot = true;
+		with (instance_create_layer(x,y,"bullet",obj_LMGbullet))
+			{
+				speed = 5
+				direction = other.image_angle //+ random_range(-1,1);
+				image_angle = direction;
+				if other.lastShot = true image_index = 3
+			
+			}
+		lastShot = true;
+		firecount = 0;/*
+		if(!audio_is_playing(snd_shit))
+		{
+			audio_play_sound(snd_t,5,false);
+		}
+		audio_stop_sound(snd_iii)*/
 	}
-	audio_stop_sound(snd_iii)*/
-	
 }
 
 if (image_angle > 90) && (image_angle < 270)
