@@ -1,7 +1,5 @@
 hsp = 0;
 vsp = 0;
-grv = 0.3;
-constWalkSp = 10;
 walksp = constWalkSp;
 dashSpeed = 10;
 isJumping = false;

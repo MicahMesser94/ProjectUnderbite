@@ -29,30 +29,9 @@ show_debug_message(equipped)
 
 
 iFrames = max(0, iFrames - 1)
-//if (global.gunState != GUNEQUIP.NONE) {
-// this makes me sad
-	switch(global.gunState)
-	{
-		case GUNEQUIP.SHOTGUN:
-		{
-			walksp = constWalkSp * .4;
-			max_ammo = 6;
-			break;
-		}
-		case GUNEQUIP.LMG: 
-		{
-			walksp = constWalkSp * .6;
-			max_ammo = 100;
-			break;
-		}
-		case GUNEQUIP.NONE:
-		{
-			break;
-		}
-		default:
-			break;
-	}
-//}
+
+
+scr_CheckGun() // this returns the equipped object
 
 switch(state)
 {

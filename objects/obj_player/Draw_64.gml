@@ -23,7 +23,8 @@ if (isReloading)
 	//draw_text (175,125,string(clipSize))
 }
 
-draw_text(125,125,string(obj_player.ammo));
+var playerAmmo = global.ammo[global.gunState];
+draw_text(125,125,playerAmmo);
 
 if (global.debug) {
 	
