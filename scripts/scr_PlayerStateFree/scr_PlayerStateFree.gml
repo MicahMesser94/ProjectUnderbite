@@ -8,44 +8,52 @@ function scr_PlayerStateFree(){
 	{
 		hsp = move * walksp
 	}
+	
 	vsp = vsp + grv;
 	canJump -=1
+	
 	if (keyReload)
 	{
 		ammo = max_ammo
 	}
+	
 	if (key_jump && canJump > 0)
-		{
-			audio_sound_pitch(snd_jump, choose(0.9,1.0,1.1,1.2))
-			audio_play_sound(snd_jump,5,false);
-			vsp = -5.5;
-			isJumping = true;
-			canJump = 0;
-		}
+	{
+		audio_sound_pitch(snd_jump, choose(0.9,1.0,1.1,1.2))
+		audio_play_sound(snd_jump,5,false);
+		vsp = -5.5;
+		isJumping = true;
+		canJump = 0;
+	}
 
 	if (place_meeting(x,y+1,obj_wall))
 	{	
 		grounded = true;
+		// Rolling
 		if (key_roll)
 		{
 			hascontrol = false
 			sprite_index = spr_playerRoll
-			if image_xscale > 0
+			if (image_xscale > 0)
 			{
-				hsp = 6
-			
-			} else
+				hsp = dashSpeed;
+			} 
+			else
 			{
-				hsp = -6
-			
+				hsp = -dashSpeed;
 			}
 			
 		}
-	}else grounded = false;
+	}
+	else 
+	{
+		grounded = false;
+	}
+	
 	if (sprite_index = spr_playerRoll)
 	{
 		iFrames = true;
-		if scr_AnimationEnd()
+		if (scr_AnimationEnd())
 		{
 			hascontrol = true;
 			iFrames = false;
@@ -121,24 +129,28 @@ function scr_PlayerStateFree(){
 			
 
 			makeHat = true;
-		
+			// Midair Dash
+			//scr_PlayerDash();
 			if (key_roll && dashCount = 0)
 			{
 				hascontrol = false
 				dashCount = 1
 				sprite_index = spr_airDash
-				image_index = 0
-				if image_xscale > 0
+				image_index = 0;
+			
+				// Direction
+				// something insn't right here
+				if (image_xscale > 0)
 				{
 					grv = 0;
 					vsp = 0
-					hsp = 6;
+					hsp = 10;
 			
 				} else
 				{
 					grv = 0;
 					vsp = 0
-					hsp = -6;
+					hsp = -10;
 			
 				}
 			
@@ -151,10 +163,6 @@ function scr_PlayerStateFree(){
 			*/
 		
 		}
-	
-	
-	
-	
 	}
 	else
 	{
