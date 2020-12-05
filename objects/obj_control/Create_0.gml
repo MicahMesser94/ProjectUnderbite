@@ -2,6 +2,7 @@
 Intentory Items
 0 = shotgun
 1 = LMG
+2 = laser pistol
 */
 //Size variables and mode setup
 w = display_get_gui_width();
@@ -31,5 +32,7 @@ for (i = 0; i < global.maxItems; i +=1)
 
 global.ammo[GUNEQUIP.SHOTGUN] = 6
 global.ammo[GUNEQUIP.LMG] = 50
+global.ammo[GUNEQUIP.LASER] = 6
 global.remainingAmmo[GUNEQUIP.SHOTGUN] = 100
 global.remainingAmmo[GUNEQUIP.LMG] = 500
+global.remainingAmmo[GUNEQUIP.LASER] = 24

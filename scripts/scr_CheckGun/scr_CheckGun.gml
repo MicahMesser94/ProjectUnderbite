@@ -24,6 +24,11 @@ function scr_CheckGun(){
 		
 		
 		}break;
+		case GUNEQUIP.LASER:
+		{
+			walksp = 5;
+			equipped = obj_laserPistol
+		}
 		return(equipped)
 	}
 

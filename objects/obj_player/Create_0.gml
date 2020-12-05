@@ -27,6 +27,7 @@ reloadTime = 0;
 //Array of clip size
 clipSize[GUNEQUIP.SHOTGUN] = 6
 clipSize[GUNEQUIP.LMG] = 50
+clipSize[GUNEQUIP.LASER] = 6
 
 equipped = obj_hands
 scr_CheckGun()
@@ -41,7 +42,8 @@ enum GUNEQUIP
 {
 	NONE = 0,
 	SHOTGUN = 1,
-	LMG =  2
+	LMG =  2,
+	LASER = 3
 }
 
 if global.gunState != GUNEQUIP.NONE
