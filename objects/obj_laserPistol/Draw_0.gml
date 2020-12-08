@@ -7,3 +7,4 @@ if (charge > 1)
 	draw_rectangle(x-35,y-40,(x-35)+min(charge,chargeDur),y-50, false);
 	draw_rectangle(x-35,y-40,(x-35)+chargeDur,y-50,true)
 }
+else draw_self()

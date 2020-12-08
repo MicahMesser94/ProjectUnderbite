@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_blast",
-    "path": "sprites/spr_blast/spr_blast.yy",
+    "name": "spr_laserBlast",
+    "path": "sprites/spr_laserBlast/spr_laserBlast.yy",
   },
   "solid": false,
   "visible": true,
@@ -20,12 +20,16 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_laserPistolBlast","path":"objects/obj_laserPistolBlast/obj_laserPistolBlast.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_laserPistolBlast","path":"objects/obj_laserPistolBlast/obj_laserPistolBlast.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":7,"eventType":7,"collisionObjectId":null,"parent":{"name":"obj_laserPistolBlast","path":"objects/obj_laserPistolBlast/obj_laserPistolBlast.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
     "name": "Laser Pistol",
-    "path": "folders/Objects/Laser Pistol.yy",
+    "path": "folders/Objects/PlayerWeapons/Laser Pistol.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_laserPistolBlast",

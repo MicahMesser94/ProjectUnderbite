@@ -202,7 +202,9 @@ function scr_PlayerStateFree(){
 
 	if (hsp != 0) image_xscale = sign(hsp)
 	if (keyAttack) state = PLAYERSTATE.ATTACK_SLASH;
-	if (key_one) scr_ItemSwitch(0,GUNEQUIP.SHOTGUN);
-	if (key_two) scr_ItemSwitch(1,GUNEQUIP.LMG);
+	if (key_one) scr_ItemSwitch(0);
+	if (key_two) scr_ItemSwitch(1);
+	if (key_three) scr_ItemSwitch(2);
+	show_debug_message(global.gunState)
 }
 

@@ -10,7 +10,7 @@ if (equippable = true)
 		instance_create_layer(obj_player.x,obj_player.y,"gun",obj_LMG)
 		global.gunState = GUNEQUIP.LMG;
 		global.ammo[global.gunState] = obj_player.clipSize[global.gunState]
-		addgun = scr_ItemPickUp(1);
+		addgun = scr_ItemPickUp(GUNEQUIP.LMG);
 		if (addgun != 0)
 		{
 			instance_destroy()

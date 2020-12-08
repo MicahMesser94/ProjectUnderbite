@@ -40,7 +40,7 @@ if (global.showInv)
 		draw_sprite(spr_itemBorder,0,x1+100+(i*100), y2 - 100)
 		if (global.inventory[i] != -1)
 		{
-			draw_sprite(spr_items, global.inventory[i],x1+100+(i*100), y2 - 100)
+			draw_sprite(spr_items, global.inventory[i] -1,x1+100+(i*100), y2 - 100)
 		}
 	}
 	

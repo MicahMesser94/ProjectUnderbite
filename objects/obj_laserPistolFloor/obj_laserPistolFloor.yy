@@ -29,7 +29,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Laser Pistol",
-    "path": "folders/Objects/Laser Pistol.yy",
+    "path": "folders/Objects/PlayerWeapons/Laser Pistol.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_laserPistolFloor",

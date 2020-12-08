@@ -49,6 +49,7 @@
     {"id":{"name":"obj_enemy_boss","path":"objects/obj_enemy_boss/obj_enemy_boss.yy",},"order":6,},
     {"id":{"name":"spr_blastHB","path":"sprites/spr_blastHB/spr_blastHB.yy",},"order":17,},
     {"id":{"name":"snd_foot3","path":"sounds/snd_foot3/snd_foot3.yy",},"order":11,},
+    {"id":{"name":"spr_laserBlast","path":"sprites/spr_laserBlast/spr_laserBlast.yy",},"order":3,},
     {"id":{"name":"spr_interact","path":"sprites/spr_interact/spr_interact.yy",},"order":5,},
     {"id":{"name":"obj_control","path":"objects/obj_control/obj_control.yy",},"order":1,},
     {"id":{"name":"snd_foot4","path":"sounds/snd_foot4/snd_foot4.yy",},"order":12,},
@@ -146,12 +147,8 @@
     {"id":{"name":"spr_crabLunge","path":"sprites/spr_crabLunge/spr_crabLunge.yy",},"order":9,},
     {"id":{"name":"spr_hBarBackBoss","path":"sprites/spr_hBarBackBoss/spr_hBarBackBoss.yy",},"order":1,},
     {"id":{"name":"snd_shotgun","path":"sounds/snd_shotgun/snd_shotgun.yy",},"order":1,},
-<<<<<<< HEAD
     {"id":{"name":"scr_PlayerStateFree","path":"scripts/scr_PlayerStateFree/scr_PlayerStateFree.yy",},"order":0,},
     {"id":{"name":"obj_laserPistol","path":"objects/obj_laserPistol/obj_laserPistol.yy",},"order":0,},
-=======
-    {"id":{"name":"scr_PlayerStateFree","path":"scripts/scr_PlayerStateFree/scr_PlayerStateFree.yy",},"order":3,},
->>>>>>> 3d1b325e3483695f173b51161d6ac5144dd9853e
     {"id":{"name":"spr_attackSlash_HB","path":"sprites/spr_attackSlash_HB/spr_attackSlash_HB.yy",},"order":2,},
     {"id":{"name":"spr_hBarBack","path":"sprites/spr_hBarBack/spr_hBarBack.yy",},"order":0,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
@@ -202,14 +199,11 @@
     {"folderPath":"folders/Sprites/Player Assets.yy","order":46,"resourceVersion":"1.0","name":"Player Assets","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Level Design.yy","order":47,"resourceVersion":"1.0","name":"Level Design","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/UI.yy","order":48,"resourceVersion":"1.0","name":"UI","tags":[],"resourceType":"GMFolder",},
-<<<<<<< HEAD
     {"folderPath":"folders/Sprites/Laser pistol.yy","order":50,"resourceVersion":"1.0","name":"Laser pistol","tags":[],"resourceType":"GMFolder",},
-    {"folderPath":"folders/Objects/Laser Pistol.yy","order":27,"resourceVersion":"1.0","name":"Laser Pistol","tags":[],"resourceType":"GMFolder",},
-=======
+    {"folderPath":"folders/Objects/PlayerWeapons/Laser Pistol.yy","order":2,"resourceVersion":"1.0","name":"Laser Pistol","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/PlayerWeapons.yy","order":26,"resourceVersion":"1.0","name":"PlayerWeapons","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Scripts/PlayerScripts.yy","order":15,"resourceVersion":"1.0","name":"PlayerScripts","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Scripts/PlayerScripts/PlayerActions.yy","order":4,"resourceVersion":"1.0","name":"PlayerActions","tags":[],"resourceType":"GMFolder",},
->>>>>>> 3d1b325e3483695f173b51161d6ac5144dd9853e
   ],
   "AudioGroups": [
     {"targets":461609314234257646,"resourceVersion":"1.0","name":"audiogroup_default","resourceType":"GMAudioGroup",},

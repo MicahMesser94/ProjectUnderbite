@@ -11,6 +11,8 @@ recoil = max(0, recoil - 1);
 
 x = x - lengthdir_x(recoil, image_angle);
 y = y - lengthdir_y(recoil, image_angle);
+bulletSpawnX = x + lengthdir_x(gunLength, image_angle + gunDirection);
+
 
 if (mouse_check_button(mb_left)) && (firingDelay <0)
 {
@@ -25,7 +27,18 @@ if (mouse_check_button_released(mb_left))
 {
 	if (charge = chargeDur)
 	{
-		//instance_create_layer(x,y,layer,obj_laserPistolBlast)
+		if (global.ammo[global.gunState] > 0 && obj_player.isReloading = false)
+		{
+			with instance_create_layer(bulletSpawnX,bulletSpawnY,layer,obj_laserPistolBlast)
+			{
+				direction = other.image_angle
+				image_angle = direction;
+			
+			}
+			sprite_index = spr_laserPistol;
+			charge = 0;
+			global.ammo[global.gunState]--
+		}
 	}
 	else
 	{
@@ -36,8 +49,10 @@ if (mouse_check_button_released(mb_left))
 if (image_angle > 90) && (image_angle < 270)
 {
 	image_yscale = -1;
+	bulletSpawnY = y + lengthdir_y(gunLength, image_angle - gunDirection);
 }
 else
 {
 	image_yscale = 1;
+	bulletSpawnY = y + lengthdir_y(gunLength, image_angle + gunDirection);
 }

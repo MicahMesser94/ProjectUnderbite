@@ -1,7 +1,24 @@
-///arg inventory slot
-///arg gunequip
+///arg button pressed
 function scr_ItemSwitch()
 {
+	i = argument0
+			//if (global.inventory[i] == argument0)// if slot "i" contains argument0
+		//	{	
+				
+				instance_destroy(equipped)
+				if (global.inventory[i] != -1)
+				{
+					global.gunState = global.inventory[i]
+					scr_CheckGun()
+					instance_create_layer(x,y,"gun",equipped)
+				//global.ammo[global.gunState] = clipSize[global.gunState]
+				return(1);//end script
+				}
+				
+				
+			//}
+		//}
+	/*
 		for (i = 0; i < global.maxItems; i += 1)
 		{
 			if (global.inventory[i] == argument0)// if slot "i" contains argument0
@@ -9,27 +26,7 @@ function scr_ItemSwitch()
 				
 				instance_destroy(equipped)
 				global.gunState = argument1
-				switch(global.gunState)
-				{
-					case GUNEQUIP.NONE:
-					{
-						walksp = 6
-						equipped = obj_hands
-					}
-					case GUNEQUIP.SHOTGUN:
-					{
-						walksp = 4;
-						equipped = obj_gun
-		
-					}break;
-					case GUNEQUIP.LMG: 
-					{
-						walksp = 3;
-						equipped = obj_LMG
-		
-		
-					}break;
-				}
+				scr_CheckGun();
 
 				instance_create_layer(x,y,"gun",equipped)
 				//global.ammo[global.gunState] = clipSize[global.gunState]
@@ -37,5 +34,6 @@ function scr_ItemSwitch()
 			}
 		}
 return(0)
-
+*/
+return 0
 }
