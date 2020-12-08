@@ -78,28 +78,36 @@ function scr_PlayerStateFree(){
 			hascontrol = true;
 			iFrames = false;
 		}
-	}else grv = 0.3
+	}
+	else 
+	{
+		// why 0.3? make this a var or use a global
+		grv = 0.3;
+	}
 
 	if hascontrol == false && isHit = true
 	{
-		sprite_index = spr_playerHit
+		sprite_index = spr_playerHit;
 	}
 
 	if ((key_jumpHi) && vsp < 0 && isJumping = true)
 	{
-		vsp -= 0.17
+		// make this a var or use a global
+		vsp -= 0.17;
 	}
+	
 	//Horizontal Collision
-	if (place_meeting(x+hsp,y,obj_wall))
+	if (place_meeting(x + hsp, y, obj_wall))
 	{
-		while(!place_meeting(x+sign(hsp),y,obj_wall))
+		while(!place_meeting(x + sign(hsp), y, obj_wall))
 		{
 			x = x + sign(hsp);
 		}
+		
 		hsp = 0;
-	
 	}
 
+	// what does this do?
 	x = x + hsp
 
 	//Vertical Collision
@@ -121,7 +129,8 @@ function scr_PlayerStateFree(){
 	
 	
 	}
-
+	
+	// what does this do?
 	y = y + vsp
 
 
@@ -140,31 +149,7 @@ function scr_PlayerStateFree(){
 
 			makeHat = true;
 			// Midair Dash
-			//scr_PlayerDash();
-			if (key_roll && dashCount = 0)
-			{
-				hascontrol = false
-				dashCount = 1
-				sprite_index = spr_airDash
-				image_index = 0;
-			
-				// Direction
-				// something insn't right here
-				if (image_xscale > 0)
-				{
-					grv = 0;
-					vsp = 0
-					hsp = 10;
-			
-				} else
-				{
-					grv = 0;
-					vsp = 0
-					hsp = -10;
-			
-				}
-			
-			}
+			scr_PlayerDash();
 			/*
 			if  image_index >= 8
 			{

@@ -1,7 +1,7 @@
 hsp = 0;
 vsp = 0;
 walksp = constWalkSp;
-dashSpeed = 10;
+dashSpeed = constDashSpeed;
 isJumping = false;
 isHit = false;
 makeHat = false;
