@@ -3,7 +3,7 @@
 
 function scr_PlayerStateFree(){
 	//Calculate Movement
-	var move = key_right - key_left;
+	var move = player_right - player_left;
 	if (hascontrol)
 	{
 		hsp = move * walksp
@@ -11,7 +11,7 @@ function scr_PlayerStateFree(){
 	
 	vsp = vsp + grv;
 	canJump -=1
-	if (keyReload || global.ammo[global.gunState] = 0)
+	if (player_reload || global.ammo[global.gunState] = 0)
 	{
 		if (global.gunState!= GUNEQUIP.NONE && global.remainingAmmo[global.gunState] > 0)
 		{
@@ -27,7 +27,7 @@ function scr_PlayerStateFree(){
 		reloadTime = 0;
 	}
 	
-	if (key_jump && canJump > 0)
+	if (player_jump && canJump > 0)
 	{
 		audio_sound_pitch(snd_jump, choose(0.9,1.0,1.1,1.2))
 		audio_play_sound(snd_jump,5,false);
@@ -40,7 +40,7 @@ function scr_PlayerStateFree(){
 	{	
 		grounded = true;
 		// Rolling
-		if (key_roll)
+		if (player_roll)
 		{
 			hascontrol = false
 			sprite_index = spr_playerRoll
@@ -90,7 +90,7 @@ function scr_PlayerStateFree(){
 		sprite_index = spr_playerHit;
 	}
 
-	if ((key_jumpHi) && vsp < 0 && isJumping = true)
+	if ((player_jumpHi) && vsp < 0 && isJumping = true)
 	{
 		// make this a var or use a global
 		vsp -= 0.17;
@@ -186,8 +186,8 @@ function scr_PlayerStateFree(){
 	}
 
 	if (hsp != 0) image_xscale = sign(hsp)
-	if (keyAttack) state = PLAYERSTATE.ATTACK_SLASH;
-	if (key_one) scr_ItemSwitch(0,GUNEQUIP.SHOTGUN);
-	if (key_two) scr_ItemSwitch(1,GUNEQUIP.LMG);
+	if (player_attack) state = PLAYERSTATE.ATTACK_SLASH;
+	if (player_inventoryOne) scr_ItemSwitch(0,GUNEQUIP.SHOTGUN);
+	if (player_inventoryTwo) scr_ItemSwitch(1,GUNEQUIP.LMG);
 }
 

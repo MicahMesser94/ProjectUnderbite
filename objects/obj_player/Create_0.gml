@@ -1,3 +1,7 @@
+// Device vars
+gamepad_set_axis_deadzone(0, 0.5);
+
+// Game vars
 hsp = 0;
 vsp = 0;
 walksp = constWalkSp;

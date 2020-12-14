@@ -1,9 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
+scr_PlayerActionCheck();
+
 if (equippable = true)
 {
 	sprite_index = spr_gunFloorS
-	if (keyboard_check_pressed(ord("E")))
+	if (player_pickUp)
 	{	
 		instance_destroy(obj_player.equipped)
 		global.gunState = GUNEQUIP.SHOTGUN

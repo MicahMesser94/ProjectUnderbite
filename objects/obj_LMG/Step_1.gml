@@ -1,5 +1,7 @@
 x = obj_player.x;
 y = obj_player.y+5;
+scr_PlayerActionCheck();
+
 
 image_angle = point_direction(x, y, mouse_x, mouse_y)
 
@@ -17,7 +19,7 @@ if (mouse_check_button_pressed(mb_left))
 x = x - lengthdir_x(recoil, image_angle);
 y = y - lengthdir_x(recoil, image_angle);
 
-if ((mouse_check_button(mb_left)) && (firingDelay <0))
+if ((player_fire) && (firingDelay <0))
 	{
 		if (global.ammo[global.gunState] > 0 && obj_player.isReloading = false)
 			{

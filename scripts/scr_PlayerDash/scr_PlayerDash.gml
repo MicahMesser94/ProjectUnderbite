@@ -6,7 +6,7 @@ function scr_PlayerDash(){
 	var playerVSpeed = 5;
 	
 	
-	if (key_roll && dashCount = 0)
+	if (player_roll && dashCount = 0)
 	{
 		hascontrol = false;
 		dashCount = 1;
